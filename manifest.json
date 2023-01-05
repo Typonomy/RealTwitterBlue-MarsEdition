@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Real Twitter Blue",
+  "version": "1.0",
+
+  "description": "Gives Twitter a water background.",
+
+  "icons": {
+    "48": "icons/MarsIcon.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["mars.js"]
+    }
+  ]
+
+}
+
